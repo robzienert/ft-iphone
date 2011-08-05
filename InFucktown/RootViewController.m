@@ -7,13 +7,26 @@
 //
 
 #import "RootViewController.h"
+#import "Parser.h"
+#import "DetailController.h"
 
 @implementation RootViewController
 
+@synthesize activityIndicator, items;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    indicator.hidesWhenStopped = YES;
+    [indicator stopAnimating];
+    self.activityIndicator = indicator;
+    [indicator release];
+    
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithCustomView:indicator];
+    self.navigationItem.rightBarButtonItem = rightButton;
+    [rightButton release];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -23,7 +36,27 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [self loadData];
     [super viewDidAppear:animated];
+}
+
+- (void)loadData {
+    if (items == nil) {
+        [activityIndicator startAnimating];
+        
+        Parser *rssParser = [[Parser alloc] init];
+        [rssParser parseRssFeed:@"http://infucktown.robzienert.com/feed" withDelegate:self];
+        
+        [rssParser release];
+    } else {
+        [self.tableView reloadData];
+    }
+}
+
+- (void)receivedItems:(NSArray *)theItems {
+    items = theItems;
+    [self.tableView reloadData];
+    [activityIndicator stopAnimating];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -52,7 +85,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [items count];
 }
 
 // Customize the appearance of table view cells.
@@ -64,8 +97,16 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
+    
+    cell.textLabel.text = [[items objectAtIndex:indexPath.row] objectForKey:@"title"];
+    
+    NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    
+    cell.detailTextLabel.text = [dateFormatter stringFromDate:[[items objectAtIndex:indexPath.row] objectForKey:@"date"]];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 
-    // Configure the cell.
     return cell;
 }
 
@@ -119,6 +160,10 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
 	*/
+    NSDictionary *theItem = [items objectAtIndex:indexPath.row];
+    DetailController *nextController = [[DetailController alloc] initWithItem:theItem];
+    [self.navigationController pushViewController:nextController animated:YES];
+    [nextController release];
 }
 
 - (void)didReceiveMemoryWarning
@@ -139,6 +184,8 @@
 
 - (void)dealloc
 {
+    [activityIndicator release];
+    [items release];
     [super dealloc];
 }
 
