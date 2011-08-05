@@ -10,15 +10,13 @@
 
 @interface DetailController : UIViewController {
     NSDictionary *item;
-    IBOutlet UILabel *itemTitle;
-    IBOutlet UILabel *itemDate;
-    IBOutlet UIWebView *itemSummary;
+    UILabel *itemDate;
+    UITextView *itemSummary;
 }
 
-@property (retain, nonatomic) NSDictionary *item;
-@property (retain, nonatomic) IBOutlet UILabel *itemTitle;
-@property (retain, nonatomic) IBOutlet UILabel *itemDate;
-@property (retain, nonatomic) IBOutlet UIWebView *itemSummary;
+@property (nonatomic, retain) NSDictionary *item;
+@property (nonatomic, retain) IBOutlet UILabel *itemDate;
+@property (nonatomic, retain) IBOutlet UITextView *itemSummary;
 
 - (id)initWithItem:(NSDictionary *)theItem;
 

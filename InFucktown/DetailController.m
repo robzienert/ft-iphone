@@ -10,10 +10,12 @@
 
 @implementation DetailController
 
-@synthesize item, itemTitle, itemDate, itemSummary;
+@synthesize item;
+@synthesize itemDate;
+@synthesize itemSummary;
 
 - (id)initWithItem:(NSDictionary *)theItem {
-    if (self = [super initWithNibName:@"Detail" bundle:nil]) {
+    if (self = [super initWithNibName:@"DetailController" bundle:nil]) {
         self.item = theItem;
         self.title = [item objectForKey:@"title"];
     }
@@ -44,19 +46,21 @@
 {
     [super viewDidLoad];
     
-    self.itemTitle.text = [item objectForKey:@"title"];
-    
     NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
     [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
     
-    self.itemDate.text = [dateFormatter stringFromDate:[item objectForKey:@"date"]];
+    [itemDate setFont:[UIFont fontWithName:@"ArialMT" size:14]];
+    self.itemDate.text = [dateFormatter stringFromDate:[item objectForKey:@"pubDate"]];
     
-    [self.itemSummary loadHTMLString:[item objectForKey:@"summary"] baseURL:nil];
+    [itemSummary setFont:[UIFont fontWithName:@"ArialMT" size:32]];
+    self.itemSummary.text = [item objectForKey:@"summary"];
 }
 
 - (void)viewDidUnload
 {
+    [self setItemDate:nil];
+    [self setItemSummary:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -70,8 +74,8 @@
 
 - (void)dealloc {
     [item release];
-    [itemTitle release];
     [itemDate release];
+    [itemSummary release];
     [super dealloc];
 }
 

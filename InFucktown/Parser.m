@@ -90,7 +90,7 @@
         [self.currentTitle appendString:string];
     } else if ([currentElement isEqualToString:@"link"]) {
         [self.currentLink appendString:string];
-    } else if ([currentElement isEqualToString:@"description"]) {
+    } else if ([currentElement isEqualToString:@"content:encoded"]) {
         [self.currentSummary appendString:string];
     } else if ([currentElement isEqualToString:@"pubDate"]) {
         [self.currentDate appendString:string];
