@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0F4FF1B13EBC1EE00FDF2CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF1A13EBC1EE00FDF2CC /* UIKit.framework */; };
+		C0F4FF1D13EBC1EE00FDF2CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF1C13EBC1EE00FDF2CC /* Foundation.framework */; };
+		C0F4FF1F13EBC1EE00FDF2CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF1E13EBC1EE00FDF2CC /* CoreGraphics.framework */; };
+		C0F4FF2513EBC1EE00FDF2CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0F4FF2313EBC1EE00FDF2CC /* InfoPlist.strings */; };
+		C0F4FF2713EBC1EE00FDF2CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F4FF2613EBC1EE00FDF2CC /* main.m */; };
+		C0F4FF2B13EBC1EE00FDF2CC /* InFucktownAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F4FF2A13EBC1EE00FDF2CC /* InFucktownAppDelegate.m */; };
+		C0F4FF2E13EBC1EE00FDF2CC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F4FF2C13EBC1EE00FDF2CC /* MainWindow.xib */; };
+		C0F4FF3113EBC1EE00FDF2CC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F4FF3013EBC1EE00FDF2CC /* RootViewController.m */; };
+		C0F4FF3413EBC1EE00FDF2CC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0F4FF3213EBC1EE00FDF2CC /* RootViewController.xib */; };
+		C0F4FF3C13EBC1EE00FDF2CC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF3B13EBC1EE00FDF2CC /* SenTestingKit.framework */; };
+		C0F4FF3D13EBC1EE00FDF2CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF1A13EBC1EE00FDF2CC /* UIKit.framework */; };
+		C0F4FF3E13EBC1EE00FDF2CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF1C13EBC1EE00FDF2CC /* Foundation.framework */; };
+		C0F4FF3F13EBC1EE00FDF2CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF1E13EBC1EE00FDF2CC /* CoreGraphics.framework */; };
+		C0F4FF4713EBC1EE00FDF2CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0F4FF4513EBC1EE00FDF2CC /* InfoPlist.strings */; };
+		C0F4FF4913EBC1EE00FDF2CC /* InFucktownTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C0F4FF4813EBC1EE00FDF2CC /* InFucktownTests.h */; };
+		C0F4FF4B13EBC1EE00FDF2CC /* InFucktownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F4FF4A13EBC1EE00FDF2CC /* InFucktownTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0F4FF4013EBC1EE00FDF2CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0F4FF0D13EBC1ED00FDF2CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0F4FF1513EBC1ED00FDF2CC;
+			remoteInfo = InFucktown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0F4FF1613EBC1EE00FDF2CC /* InFucktown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InFucktown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F4FF1A13EBC1EE00FDF2CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C0F4FF1C13EBC1EE00FDF2CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C0F4FF1E13EBC1EE00FDF2CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C0F4FF2213EBC1EE00FDF2CC /* InFucktown-Info.plist */ = {isa = PBXFileReference; path = "InFucktown-Info.plist"; sourceTree = "<group>"; };
+		C0F4FF2413EBC1EE00FDF2CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0F4FF2613EBC1EE00FDF2CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C0F4FF2813EBC1EE00FDF2CC /* InFucktown-Prefix.pch */ = {isa = PBXFileReference; path = "InFucktown-Prefix.pch"; sourceTree = "<group>"; };
+		C0F4FF2913EBC1EE00FDF2CC /* InFucktownAppDelegate.h */ = {isa = PBXFileReference; path = InFucktownAppDelegate.h; sourceTree = "<group>"; };
+		C0F4FF2A13EBC1EE00FDF2CC /* InFucktownAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InFucktownAppDelegate.m; sourceTree = "<group>"; };
+		C0F4FF2D13EBC1EE00FDF2CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C0F4FF2F13EBC1EE00FDF2CC /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		C0F4FF3013EBC1EE00FDF2CC /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C0F4FF3313EBC1EE00FDF2CC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		C0F4FF3A13EBC1EE00FDF2CC /* InFucktownTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InFucktownTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F4FF3B13EBC1EE00FDF2CC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C0F4FF4413EBC1EE00FDF2CC /* InFucktownTests-Info.plist */ = {isa = PBXFileReference; path = "InFucktownTests-Info.plist"; sourceTree = "<group>"; };
+		C0F4FF4613EBC1EE00FDF2CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C0F4FF4813EBC1EE00FDF2CC /* InFucktownTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InFucktownTests.h; sourceTree = "<group>"; };
+		C0F4FF4A13EBC1EE00FDF2CC /* InFucktownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InFucktownTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0F4FF1313EBC1ED00FDF2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F4FF1B13EBC1EE00FDF2CC /* UIKit.framework in Frameworks */,
+				C0F4FF1D13EBC1EE00FDF2CC /* Foundation.framework in Frameworks */,
+				C0F4FF1F13EBC1EE00FDF2CC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F4FF3613EBC1EE00FDF2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F4FF3C13EBC1EE00FDF2CC /* SenTestingKit.framework in Frameworks */,
+				C0F4FF3D13EBC1EE00FDF2CC /* UIKit.framework in Frameworks */,
+				C0F4FF3E13EBC1EE00FDF2CC /* Foundation.framework in Frameworks */,
+				C0F4FF3F13EBC1EE00FDF2CC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0F4FF0B13EBC1ED00FDF2CC = {
+			isa = PBXGroup;
+			children = (
+				C0F4FF2013EBC1EE00FDF2CC /* InFucktown */,
+				C0F4FF4213EBC1EE00FDF2CC /* InFucktownTests */,
+				C0F4FF1913EBC1EE00FDF2CC /* Frameworks */,
+				C0F4FF1713EBC1EE00FDF2CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0F4FF1713EBC1EE00FDF2CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4FF1613EBC1EE00FDF2CC /* InFucktown.app */,
+				C0F4FF3A13EBC1EE00FDF2CC /* InFucktownTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0F4FF1913EBC1EE00FDF2CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4FF1A13EBC1EE00FDF2CC /* UIKit.framework */,
+				C0F4FF1C13EBC1EE00FDF2CC /* Foundation.framework */,
+				C0F4FF1E13EBC1EE00FDF2CC /* CoreGraphics.framework */,
+				C0F4FF3B13EBC1EE00FDF2CC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0F4FF2013EBC1EE00FDF2CC /* InFucktown */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4FF2913EBC1EE00FDF2CC /* InFucktownAppDelegate.h */,
+				C0F4FF2A13EBC1EE00FDF2CC /* InFucktownAppDelegate.m */,
+				C0F4FF2C13EBC1EE00FDF2CC /* MainWindow.xib */,
+				C0F4FF2F13EBC1EE00FDF2CC /* RootViewController.h */,
+				C0F4FF3013EBC1EE00FDF2CC /* RootViewController.m */,
+				C0F4FF3213EBC1EE00FDF2CC /* RootViewController.xib */,
+				C0F4FF2113EBC1EE00FDF2CC /* Supporting Files */,
+			);
+			path = InFucktown;
+			sourceTree = "<group>";
+		};
+		C0F4FF2113EBC1EE00FDF2CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4FF2213EBC1EE00FDF2CC /* InFucktown-Info.plist */,
+				C0F4FF2313EBC1EE00FDF2CC /* InfoPlist.strings */,
+				C0F4FF2613EBC1EE00FDF2CC /* main.m */,
+				C0F4FF2813EBC1EE00FDF2CC /* InFucktown-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C0F4FF4213EBC1EE00FDF2CC /* InFucktownTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4FF4813EBC1EE00FDF2CC /* InFucktownTests.h */,
+				C0F4FF4A13EBC1EE00FDF2CC /* InFucktownTests.m */,
+				C0F4FF4313EBC1EE00FDF2CC /* Supporting Files */,
+			);
+			path = InFucktownTests;
+			sourceTree = "<group>";
+		};
+		C0F4FF4313EBC1EE00FDF2CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4FF4413EBC1EE00FDF2CC /* InFucktownTests-Info.plist */,
+				C0F4FF4513EBC1EE00FDF2CC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0F4FF1513EBC1ED00FDF2CC /* InFucktown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F4FF4E13EBC1EE00FDF2CC /* Build configuration list for PBXNativeTarget "InFucktown" */;
+			buildPhases = (
+				C0F4FF1213EBC1ED00FDF2CC /* Sources */,
+				C0F4FF1313EBC1ED00FDF2CC /* Frameworks */,
+				C0F4FF1413EBC1ED00FDF2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InFucktown;
+			productName = InFucktown;
+			productReference = C0F4FF1613EBC1EE00FDF2CC /* InFucktown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0F4FF3913EBC1EE00FDF2CC /* InFucktownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F4FF5113EBC1EE00FDF2CC /* Build configuration list for PBXNativeTarget "InFucktownTests" */;
+			buildPhases = (
+				C0F4FF3513EBC1EE00FDF2CC /* Sources */,
+				C0F4FF3613EBC1EE00FDF2CC /* Frameworks */,
+				C0F4FF3713EBC1EE00FDF2CC /* Resources */,
+				C0F4FF3813EBC1EE00FDF2CC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0F4FF4113EBC1EE00FDF2CC /* PBXTargetDependency */,
+			);
+			name = InFucktownTests;
+			productName = InFucktownTests;
+			productReference = C0F4FF3A13EBC1EE00FDF2CC /* InFucktownTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0F4FF0D13EBC1ED00FDF2CC /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C0F4FF1013EBC1ED00FDF2CC /* Build configuration list for PBXProject "InFucktown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C0F4FF0B13EBC1ED00FDF2CC;
+			productRefGroup = C0F4FF1713EBC1EE00FDF2CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0F4FF1513EBC1ED00FDF2CC /* InFucktown */,
+				C0F4FF3913EBC1EE00FDF2CC /* InFucktownTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0F4FF1413EBC1ED00FDF2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F4FF2513EBC1EE00FDF2CC /* InfoPlist.strings in Resources */,
+				C0F4FF2E13EBC1EE00FDF2CC /* MainWindow.xib in Resources */,
+				C0F4FF3413EBC1EE00FDF2CC /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F4FF3713EBC1EE00FDF2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F4FF4713EBC1EE00FDF2CC /* InfoPlist.strings in Resources */,
+				C0F4FF4913EBC1EE00FDF2CC /* InFucktownTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C0F4FF3813EBC1EE00FDF2CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0F4FF1213EBC1ED00FDF2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F4FF2713EBC1EE00FDF2CC /* main.m in Sources */,
+				C0F4FF2B13EBC1EE00FDF2CC /* InFucktownAppDelegate.m in Sources */,
+				C0F4FF3113EBC1EE00FDF2CC /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F4FF3513EBC1EE00FDF2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F4FF4B13EBC1EE00FDF2CC /* InFucktownTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0F4FF4113EBC1EE00FDF2CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0F4FF1513EBC1ED00FDF2CC /* InFucktown */;
+			targetProxy = C0F4FF4013EBC1EE00FDF2CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0F4FF2313EBC1EE00FDF2CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F4FF2413EBC1EE00FDF2CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C0F4FF2C13EBC1EE00FDF2CC /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F4FF2D13EBC1EE00FDF2CC /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C0F4FF3213EBC1EE00FDF2CC /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F4FF3313EBC1EE00FDF2CC /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		C0F4FF4513EBC1EE00FDF2CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0F4FF4613EBC1EE00FDF2CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0F4FF4C13EBC1EE00FDF2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C0F4FF4D13EBC1EE00FDF2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0F4FF4F13EBC1EE00FDF2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InFucktown/InFucktown-Prefix.pch";
+				INFOPLIST_FILE = "InFucktown/InFucktown-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C0F4FF5013EBC1EE00FDF2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InFucktown/InFucktown-Prefix.pch";
+				INFOPLIST_FILE = "InFucktown/InFucktown-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C0F4FF5213EBC1EE00FDF2CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InFucktown.app/InFucktown";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InFucktown/InFucktown-Prefix.pch";
+				INFOPLIST_FILE = "InFucktownTests/InFucktownTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C0F4FF5313EBC1EE00FDF2CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InFucktown.app/InFucktown";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InFucktown/InFucktown-Prefix.pch";
+				INFOPLIST_FILE = "InFucktownTests/InFucktownTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0F4FF1013EBC1ED00FDF2CC /* Build configuration list for PBXProject "InFucktown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F4FF4C13EBC1EE00FDF2CC /* Debug */,
+				C0F4FF4D13EBC1EE00FDF2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F4FF4E13EBC1EE00FDF2CC /* Build configuration list for PBXNativeTarget "InFucktown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F4FF4F13EBC1EE00FDF2CC /* Debug */,
+				C0F4FF5013EBC1EE00FDF2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C0F4FF5113EBC1EE00FDF2CC /* Build configuration list for PBXNativeTarget "InFucktownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F4FF5213EBC1EE00FDF2CC /* Debug */,
+				C0F4FF5313EBC1EE00FDF2CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0F4FF0D13EBC1ED00FDF2CC /* Project object */;
+}
