@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C08E989513ECAB90008DD408 /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E989313ECAB90008DD408 /* DetailController.m */; };
 		C08E989613ECAB90008DD408 /* DetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C08E989413ECAB90008DD408 /* DetailController.xib */; };
+		C0C36F2A13EF160600FF716C /* BackgroundLightning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0C36F2913EF160600FF716C /* BackgroundLightning.jpg */; };
 		C0F4FF1B13EBC1EE00FDF2CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF1A13EBC1EE00FDF2CC /* UIKit.framework */; };
 		C0F4FF1D13EBC1EE00FDF2CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF1C13EBC1EE00FDF2CC /* Foundation.framework */; };
 		C0F4FF1F13EBC1EE00FDF2CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F4FF1E13EBC1EE00FDF2CC /* CoreGraphics.framework */; };
@@ -42,6 +43,7 @@
 		C08E989213ECAB90008DD408 /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
 		C08E989313ECAB90008DD408 /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
 		C08E989413ECAB90008DD408 /* DetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailController.xib; sourceTree = "<group>"; };
+		C0C36F2913EF160600FF716C /* BackgroundLightning.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackgroundLightning.jpg; sourceTree = "<group>"; };
 		C0F4FF1613EBC1EE00FDF2CC /* InFucktown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InFucktown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F4FF1A13EBC1EE00FDF2CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C0F4FF1C13EBC1EE00FDF2CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,9 +93,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0C36F2813EF160600FF716C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C0C36F2913EF160600FF716C /* BackgroundLightning.jpg */,
+			);
+			name = Images;
+			path = InFucktown/Images;
+			sourceTree = "<group>";
+		};
 		C0F4FF0B13EBC1ED00FDF2CC = {
 			isa = PBXGroup;
 			children = (
+				C0C36F2813EF160600FF716C /* Images */,
 				C0F4FF2013EBC1EE00FDF2CC /* InFucktown */,
 				C0F4FF4213EBC1EE00FDF2CC /* InFucktownTests */,
 				C0F4FF1913EBC1EE00FDF2CC /* Frameworks */,
@@ -241,6 +253,7 @@
 				C0F4FF2E13EBC1EE00FDF2CC /* MainWindow.xib in Resources */,
 				C0F4FF3413EBC1EE00FDF2CC /* RootViewController.xib in Resources */,
 				C08E989613ECAB90008DD408 /* DetailController.xib in Resources */,
+				C0C36F2A13EF160600FF716C /* BackgroundLightning.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
